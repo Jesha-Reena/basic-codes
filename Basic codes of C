@@ -31,6 +31,9 @@ int main()
    (n%2==0)?printf("Even"):printf("Odd");
 }
 
+Alter:
+(n&1==0)?printf("Even"):printf("Odd");
+
 Output:  
        10
        Even
@@ -76,6 +79,60 @@ int main()
 
 Output:
 0 1 2 3 4 ........... 998 999 1000
+
+
+*Code6(Print product of two numbers without using *)
+ 
+#include<stdio.h>
+int main()
+{
+   int n,sum=0; 
+   scanf("%d %d",&n1,&n2); 
+   for(int i=1;i<=n1; i++)
+   sum=sum+n2;
+   printf("%d",sum); 
+}
+Output:
+5 3
+40
+
+**Code7(Fibonacci series)
+
+#include<stdio.h>
+int main()
+{
+   int first = -1 , second = 1, print,limit;
+ scanf("%d",&limit);
+ while(limit)
+ {
+ print = first + second;
+ printf("%d ",print);
+ first = second;
+ second = print;
+ limit--;
+ }
+}
+Output:
+5
+0 1 1 2 3
+
+***Code8(power of a number without using pow function)
+
+#include<stdio.h>
+int main()
+{
+   int n, p, rem=1;
+ scanf("%d %d",&n,&p);
+ for(int i=1;i<=p; i++)
+ { 
+   rem=n*rem;
+ }
+ printf("%d",rem); 
+}
+Output:
+  2 3
+  8
+
 
 
 
